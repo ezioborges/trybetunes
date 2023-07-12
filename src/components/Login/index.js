@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { createUser } from '../../services/userAPI';
-import Loading from '../Loading';
 import './index.css';
 
 class Login extends React.Component {
@@ -42,7 +41,7 @@ class Login extends React.Component {
 
   render() {
     const { name, desabledButton, isLoading } = this.state;
-    const loading = <Loading />;
+    const loading = <h3>Carregado...</h3>;
     return (
       <form className="formLog">
         {
