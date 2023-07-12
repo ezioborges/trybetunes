@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.element {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(144, 26, 202);
+  }
+  
+  .element::-webkit-scrollbar {
+    width: 3px;
+    height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+  }
+  
+  .element::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+  
+  .element::-webkit-scrollbar-thumb {
+    background-color: rgb(144, 26, 202);;
+  }
+
+.info-content {
+    display: flex;
+    align-items: start;
+    padding: 48px;
+}
+
+.page-album {
+    width: 100%;
+    height: 100%;
+}
+
+.card-music {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 50vh;
+    overflow: scroll;
+}
+
+.artist-album-descrip {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+img {
+    width: 250px;
+    border-radius: 5px;
+}

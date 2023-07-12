@@ -1,0 +1,36 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-items {
+align-items: center;
+display: flex;
+justify-content: center;
+height: 20vh;
+}
+
+.page-search {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.load {
+display: flex;
+justify-content: center;
+padding: 50px;
+}
+
+.result {
+display: flex;
+flex-direction: column;
+}
+
+.result > p {
+margin: auto;
+margin-bottom: 60px;
+font-size: 1.6em;
+}

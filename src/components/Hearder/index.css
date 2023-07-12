@@ -1,0 +1,22 @@
+.header-items {
+  align-items: center;
+  background-color: rgb(144, 26, 202);
+  border: 1px solid green;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.link-items {
+  color: white;
+  text-decoration: none;
+  /* margin-right: 8px; */
+  padding: 15px 25px;
+}
+
+.link-items:hover {
+  background-color: rgb(112, 17, 160);
+  border-radius: 15px;
+}

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { createUser } from '../services/userAPI';
-import Loading from './Loading';
+import { createUser } from '../../services/userAPI';
+import Loading from '../Loading';
+import './index.css';
 
 class Login extends React.Component {
   constructor() {
@@ -43,28 +44,35 @@ class Login extends React.Component {
     const { name, desabledButton, isLoading } = this.state;
     const loading = <Loading />;
     return (
-      isLoading ? loading : (
-        <div data-testid="page-login">
-          <p>Login</p>
-          <label htmlFor="name">
-            <input
-              data-testid="login-name-input"
-              name="name"
-              type="text"
-              onChange={ this.handleChange }
-              value={ name }
-            />
-          </label>
-          <button
-            data-testid="login-submit-button"
-            type="button"
-            className="btn"
-            disabled={ desabledButton }
-            onClick={ this.handleClick }
-          >
-            Entrar
-          </button>
-        </div>)
+      <form className="formLog">
+        {
+          isLoading ? loading : (
+            <div className="divLog">
+              <label htmlFor="name" className="form-label">
+                <h3>Login</h3>
+                <input
+                  data-testid="login-name-input"
+                  name="name"
+                  type="text"
+                  onChange={ this.handleChange }
+                  value={ name }
+                  className="form-control"
+                />
+              </label>
+
+              <button
+                data-testid="login-submit-button"
+                type="button"
+                className="btn btn-color btn-block mb-4"
+                disabled={ desabledButton }
+                onClick={ this.handleClick }
+              >
+                Entrar
+              </button>
+            </div>
+          )
+        }
+      </form>
     );
   }
 }

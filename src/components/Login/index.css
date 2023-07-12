@@ -1,0 +1,32 @@
+.divLog {
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 80px;
+    height: 60%;
+    width: 30%;
+}
+
+.btn-color {
+    background-color: rgba(179,29,253,1);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-color:hover {
+    background-color:  rgb(144, 26, 202);
+    color: white;
+}
+
+.formLog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgb(0,0,0); */
+    background: linear-gradient(69deg, rgba(179,29,253,1) 30%, rgb(186, 9, 50) 180%);
+}
