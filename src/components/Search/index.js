@@ -40,6 +40,10 @@ export default class Search extends React.Component {
     }, () => this.getNameArtisit());
   };
 
+  handleKeyUp = (event) => {
+    if (event.key === 'Enter') this.handleClick();
+  };
+
   getNameArtisit = () => {
     const { allAlbums } = this.state;
 
@@ -86,6 +90,7 @@ export default class Search extends React.Component {
                 className="form-control"
                 placeholder="Nome do artista"
                 onChange={ this.handleChange }
+                onKeyUp={ this.handleKeyUp }
               />
             </label>
             <button
